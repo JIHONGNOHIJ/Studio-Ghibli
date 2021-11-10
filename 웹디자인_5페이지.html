@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3 지브리 정보</title>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border-collapse: collapse;
+            text-decoration: none;
+        }
+        @font-face {
+        font-family: 'EBSJSKMedium';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/EBSJSKMedium.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+            body{
+                background-color: #82add9;
+            }
+            .main{
+                    background-color: #78a65e;
+                    height: 90px;
+                    text-align: center;
+                    font-family: 'EBSJSKMedium';
+                    color: white;
+                    font-size: 40px;
+                }
+                .b_box{
+                    margin: 0 780px;
+                    padding: 20px 0 0 0;
+                }
+                .box{
+                    width: 300px;
+                    display: flex;
+                }
+                .dot1{
+                    text-align: center;
+                    font-family: 'EBSJSKMedium';
+                    color: white;
+                    font-size: 40px;
+                    float: left;
+                    margin: 0 5px 0 0;
+                }
+                a{
+                    color: inherit;
+                    text-decoration: none;
+                }
+                .dot2{
+                    float: left;
+                    margin: 0 0 0 5px;
+                }
+                .wrapper{
+                    width: 1440px;
+                    height: 2836px;
+                    background-color: #004a70;
+                    margin: 0px auto;
+                }
+                    .header{
+                        font-family: 'EBSJSKMedium';
+                        background-color: #004a70;
+                        height: 30px;
+                        text-align: center;
+                        display: flex;
+                        padding: 20px 15px;
+                    }
+                    .nav{
+                        display: flex;
+                    }
+                    .nav li{ 
+                        font-size: 30px;
+                        color: white;
+                        margin: 0px 135px;
+                    }
+                    li a{
+                        color: inherit;
+                        text-decoration: none;
+                    }
+                    .nav li a{
+                        position: relative;
+                        padding: 0 0 4px;
+                    }
+                    .nav li a::after{
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 0;
+                        height: 3px;
+                        background: white;
+                        transition: all .5s ease-out;
+                    }.nav li a:hover::after{ width: 100%;}
+                    .contents{
+                        background-color: #004a70;
+                        width: 1440px;
+                    }
+                        .section1{
+                            background-image:url("image/howl041.png");
+                            width: 1440px;
+                            height: 779px;
+                            margin-bottom: 60px;
+                        }
+                        .box1{
+                            font-family: 'NanumSquareBold';
+                            padding-top: 620px;
+                        }
+                            .box1 h2{
+                                color: white;
+                                font-size: 30px;
+                                text-align: center;
+                                margin-bottom: 18px;
+                            }
+                            .box1 h3{
+                                color: white;
+                                font-size: 25px;
+                                text-align: center;
+                                margin-bottom: 18px;
+                            }
+                        .section2{
+                            background-color: rgba(255, 255, 255, 0.800);
+                            padding: 20px;
+                        }
+                            .box2{
+                                display: flex;
+                                margin: 30px 60px;
+                            }
+                                .box2_1{
+                                    background-image:url("image/2.png");
+                                    width: 600px;
+                                    height: 400px;
+                                    margin: 0px 20px;
+                                }
+                                .box2_2{
+                                    background-image:url("image/FBQfNRFVcAYFo4k.png");
+                                    width: 600px;
+                                    height: 400px;
+                                    margin: 0px 20px;
+                                }
+                            .box3{
+                                width: 1220px;
+                                color: black;
+                                margin: 50px 80px;
+                            }
+                                .box3 h1{
+                                    font-family: 'NanumSquareExtraBold';
+                                    text-align: center;
+                                    font-size: 50px;
+                                    color: black;
+                                    margin: 20px 0;
+                                }
+                                .box3_x{
+                                    display: flex;
+                                    margin: 30px 0 0;  
+                                }
+                                .box3_1{
+                                    width: 140px;
+                                    height: 250px;
+                                    font-family: 'NanumSquareBold';
+                                    text-align: right;
+                                    font-size: 25px;
+                                    line-height: 36px;
+                                    margin: 0px 10px 0;
+                                }
+                                .box3_2{
+                                    width: 450px;
+                                    height: 250px;
+                                    font-family: 'NanumSquareBold';
+                                    text-align: left;
+                                    font-size: 25px;
+                                    line-height: 36px;
+                                    margin: 0px 20px 0;
+                                }
+                                .box3_3 p{
+                                    width: 600px;
+                                    height: 250px;
+                                    font-family: 'NanumSquareBold';
+                                    text-align: justify;
+                                    font-size: 25px;
+                                    letter-spacing: 3px;
+                                }
+                         .section3{
+                            background-color: rgba(255, 255, 255, 0.800);
+                            margin: 30px 0 30px;
+                            padding: 20px;
+                        }
+                            .box4{
+                                display: flex;
+                                margin: 35px 60px 30px;
+                            }
+                                .box4_1{
+                                    background-image:url("image/f234.png");
+                                    width: 600px;
+                                    height: 400px;
+                                    margin: 0px 20px;
+                                }
+                                .box4_2{
+                                    width: 600px;
+                                    height: 400px;
+                                    margin: 10px 20px 0;
+                                }
+                                    .box4_2 h1{
+                                        font-family: 'NanumSquareExtraBold';
+                                        text-align: left;
+                                        font-size: 50px;
+                                        color: black;
+                                        margin: 0 0 20px ;
+                                    }
+                                    .box4_2 h2{
+                                        font-family: 'NanumSquareExtraBold';
+                                        text-align: left;
+                                        font-size: 35px;
+                                        color: black;
+                                        margin: 10px 0 20px ;
+                                    }
+                                    .box4_2 p{
+                                        font-family: 'NanumSquareExtraBold';
+                                        text-align: left;
+                                        font-size: 25px;
+                                        color: black;
+                                        letter-spacing: 3px;
+                                        margin: 0 0 20px ;
+                                    }
+                        .section4{
+                            background-color: rgba(255, 255, 255, 0.800);
+                            margin: 0 0 60px;
+                            padding: 20px;
+                        }
+                        .box5_x{
+                            margin: 50px 0 ;
+                        }
+                        .box5_1 h1{
+                            font-family: 'NanumSquareExtraBold';
+                            text-align: center;
+                            font-size: 50px;
+                            color: black;
+                            margin: 0 0 30px ;
+                        }
+                        .box5_2{
+                            margin: 80px 0 0;
+                        }
+                            .nav3{
+                            display: flex;
+                            }
+                            .nav3 li{ 
+                                text-align: center;
+                                font-size: 30px;
+                                color: black;
+                                margin: 0px 77px;
+                            }
+                            li a{
+                                color: inherit;
+                                text-decoration: none;
+                            }
+                 .footer {
+                    background-color: #78a65e;
+                    color: white;
+                    text-align: center;
+                    padding: 80px;
+                    letter-spacing: 5px;
+                     }
+                     .footer h1{
+                        font-size: 20px;
+                        font-weight: lighter;
+                        padding: 10px;
+                    }
+                    .footer h2{
+                        font-size: 15px;
+                        font-weight: lighter;
+                        padding: 10px;
+                    }
+                        .footer h3{
+                            font-size: 9px;
+                            font-weight: lighter;
+                        }
+                        .footer h4{
+                            font-size: 9px;
+                            font-weight: lighter;
+                        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="b_box">
+            <div class="box">
+                <div class="dot1"><a href="file:///Users/hongjihyun/Desktop/2%E1%84%92%E1%85%A1%E1%86%A8%E1%84%82%E1%85%A7%E1%86%AB%202%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%B5/4%20Wsb%20Design/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6/%E1%84%8B%E1%85%B0%E1%86%B8%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB_2%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5.html">지브리 스튜디오</a></div>
+                <div class="dot2"><a href="file:///Users/hongjihyun/Desktop/2%E1%84%92%E1%85%A1%E1%86%A8%E1%84%82%E1%85%A7%E1%86%AB%202%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%B5/4%20Wsb%20Design/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6/%E1%84%8B%E1%85%B0%E1%86%B8%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB_2%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5.html"><img src="image/home.png"></a></div>
+            </div>
+            </div>
+    </div>
+    <div class="wrapper">
+        <div class="header">
+            <ul class="nav">
+                <li><a href="file:///Users/hongjihyun/Desktop/2%E1%84%92%E1%85%A1%E1%86%A8%E1%84%82%E1%85%A7%E1%86%AB%202%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%B5/4%20Wsb%20Design/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6/%E1%84%8B%E1%85%B0%E1%86%B8%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB_3%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5.html">1 '지브리 스튜디오'</a></li>
+                <li><a href="file:///Users/hongjihyun/Desktop/2%E1%84%92%E1%85%A1%E1%86%A8%E1%84%82%E1%85%A7%E1%86%AB%202%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%B5/4%20Wsb%20Design/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6/%E1%84%8B%E1%85%B0%E1%86%B8%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB_4%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5.html">2 지브리 대표 영화</a></li>
+                <li><a href="file:///Users/hongjihyun/Desktop/2%E1%84%92%E1%85%A1%E1%86%A8%E1%84%82%E1%85%A7%E1%86%AB%202%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%B5/4%20Wsb%20Design/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6/%E1%84%8B%E1%85%B0%E1%86%B8%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB_5%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5.html">3 지브리 정보</a></li>
+            </ul>
+        </div>
+        <div class="contents">
+            <div class="section1">
+                <div class="box1">
+                    <h2>최고의 불꽃은 최악의 상황일때<br>가장 밝게 타오른다고 하지.</h2>
+                    <h3>&lt;하울의 움직이는 성 2004&gt;</h3>
+                </div>
+            </div>
+            <div class="section2">
+                <div class="box2">
+                    <div class="box2_1"></div>
+                    <div class="box2_2"></div>
+                </div>
+                <div class="box3">
+                    <h1>지브리 스튜디오 미술관</h1>
+                    <div class="box3_x">
+                    <div class="box3_1">
+                        <ul class="nav1">
+                            <li>정기 휴관일 :</li>
+                            <li>개관시간 :</li>
+                            <li>티켓가격 :</li>
+                            <li><br></li>
+                            <li><br></li>
+                            <li><br></li>
+                            <li>위치 :</li>
+                        </ul>
+                    </div>
+                    <div class="box3_2">
+                        <ul class="nav2">
+                            <li>매주 화요일</li>
+                            <li>10:00 - 18:00</li>
+                            <li>성인 - 1000엔</li>
+                            <li>고등, 중학생 - 700엔</li>
+                            <li>초등학생 - 400엔</li>
+                            <li>유아(4세 이상) - 100엔</li>
+                            <li>도쿄도 미타카시 시모 렌 자쿠 1 쵸메 1-83</li>
+                        </ul>
+                    </div>
+                    <div class="box3_3">
+                        <p> 지브리 스튜디오에서 운영하고 있는 지브리 스튜디오 미술관이다. 지브리 스튜디오에서 만든 영화들에 대한 작품들이 주를 이루며, 미야자키 하야오의 뜻으로 작품을 제대로 관람할 수 있도록, 사진 촬영은 금지 되어 있다.<br>
+                            입장권 티켓이 지브리 스튜디오 작품들의 셀화가 필름으로 있는 것이 특징이며, 장면도, 작품도 랜덤이다. 미술관에서만 볼 수 있는 단편영화도 있으며 입장권 1장에 1번 밖에 보지 못 한다.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section3">
+                <div class="box4">
+                    <div class="box4_1"></div>
+                    <div class="box4_2">
+                        <h1>도토리 숲</h1>
+                        <h2>공식 지브리 상품 한국 상점</h2>
+                        <p>지브리 스튜디오의 공식 상품을 판매하는 한국 상점이다. 현재 잠실과 용산에 오프라인 매장이 있으며 온라인을 통해 지브리 상품을 구매할 수 있다.<br>
+                            접시, 피규어, 스티커 등을 판매하고 있으며, 일본에 있는 모든 상품이 있는 것은 아니지만 안전한 경로로 구매할 수 있는 것이 장점이다. 매해 들어오는 상품도 바뀌고 있고, 재고관리도 활발해 안정적으로 상품을 받을 수 있다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section4">
+                <div class="box5">
+                    <div class="box5_x">
+                    <div class="box5_1">
+                        <h1>관련링크</h1>
+                    </div>
+                    <div class="box5_2">
+                        <ul class="nav3">
+                            <li><a href="https://www.ghibli.jp/" target="blank">지브리 스튜디오<br>공식 홈페이지</a></li>
+                            <li><a href="https://twitter.com/JP_GHIBLI" target="blank">지브리 스튜디오<br>공식 트위터</a></li>
+                            <li><a href="https://www.ghibli-museum.jp/" target="blank">지브리 스튜디오 미술관<br>공식 홈페이지</a></li>
+                            <li><a href="http://www.dotorisup.com" target="blank">도토리 숲<br>홈페이지</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>지브리 스튜디오 홈페이지</h1>
+        <h2>menu : 1 ‘지브리스튜디오’ / 2 지브리 대표 영화 / 지브리 정보</h2>
+        <h3>made homepage : HONG JIHYUN / 2021.11.09</h3>
+        <h4>*공식 지브리 스튜디오 홈페이지가 아닙니다. 개인제작 홈페이지 입니다.</h4>
+    </div>
+</body>
+</html>

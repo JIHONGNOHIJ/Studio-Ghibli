@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2 지브리 대표 영화</title>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border-collapse: collapse;
+            text-decoration: none;
+        }
+        @font-face {
+        font-family: 'EBSJSKMedium';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/EBSJSKMedium.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+            body{
+                background-color: #82add9;
+            }
+            .main{
+                    background-color: #78a65e;
+                    height: 90px;
+                    text-align: center;
+                    font-family: 'EBSJSKMedium';
+                    color: white;
+                    font-size: 40px;
+                }
+                .b_box{
+                    margin: 0 780px;
+                    padding: 20px 0 0 0;
+                }
+                .box{
+                    width: 300px;
+                    display: flex;
+                }
+                .dot1{
+                    text-align: center;
+                    font-family: 'EBSJSKMedium';
+                    color: white;
+                    font-size: 40px;
+                    float: left;
+                    margin: 0 5px 0 0;
+                }
+                a{
+                    color: inherit;
+                    text-decoration: none;
+                }
+                .dot2{
+                    float: left;
+                    margin: 0 0 0 5px;
+                }
+                .wrapper{
+                    width: 1440px;
+                    height: 3289px;
+                    background-color: #004a70;
+                    margin: 0px auto;
+                }
+                    .header{
+                        font-family: 'EBSJSKMedium';
+                        background-color: #004a70;
+                        height: 30px;
+                        text-align: center;
+                        display: flex;
+                        padding: 20px 15px;
+                    }
+                        .nav{
+                            display: flex;
+                        }
+                            .nav li{ 
+                                font-size: 30px;
+                                color: white;
+                                margin: 0px 135px;
+                            }
+                            li a{
+                                color: inherit;
+                                text-decoration: none;
+                            }
+                            .nav li a{
+                        position: relative;
+                        padding: 0 0 4px;
+                    }
+                    .nav li a::after{
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 0;
+                        height: 3px;
+                        background: white;
+                        transition: all .5s ease-out;
+                    }.nav li a:hover::after{ width: 100%;}
+                    .contents{
+                        background-color: #004a70;
+                        width: 1440px;
+                    }
+                        .section1{
+                            background-image:url("image/majo005.png");
+                            width: 1440px;
+                            height: 779px;
+                            margin-bottom: 60px;
+                        }
+                            .box1{
+                                font-family: 'NanumSquareBold';
+                                padding-top: 620px;
+                            }
+                                .box1 h2{
+                                    color: white;
+                                    font-size: 30px;
+                                    text-align: center;
+                                    margin-bottom: 18px;
+                                }
+                                .box1 h3{
+                                    color: white;
+                                    font-size: 25px;
+                                    text-align: center;
+                                    margin-bottom: 18px;
+                                }
+                        .section2{
+                            background-color: rgba(255, 255, 255, 0.800);
+                            margin: 30px 0 30px;
+                            padding: 20px;
+                        }
+                            .box2{
+                                display: flex;
+                                margin: 30px 60px;
+                            }
+                                .box2_1{
+                                    width: 240px;
+                                    height: 340px;
+                                    margin: 0 70px 0 0px;
+                                }
+                                .box2_2{
+                                    margin: 0 50px 0 0;
+                                }
+                                        .box2_21 h1{
+                                        font-family: 'NanumSquareExtraBold';
+                                        text-align: left;
+                                        font-size: 45px;
+                                        margin: 0 0 40px 0;
+                                        }
+                                    .box2_22{
+                                        font-family: 'NanumSquareBold';
+                                        text-align: left;
+                                        font-size: 25px;
+                                        line-height: 50px;
+                                        margin: 0;
+                                        }
+                                .box2_3 p{
+                                    width: 500px;
+                                    font-family: 'NanumSquareBold';
+                                    text-align: justify;
+                                    font-size: 17px;
+                                    letter-spacing: 3px;
+                                    margin: 105px 0 0 0 ;
+                                }
+
+                        .section3{
+                            background-color: rgba(255, 255, 255, 0.800);
+                            margin: 30px 0 30px;
+                            padding: 20px;
+                        }
+                            .box3{
+                                display: flex;
+                                margin: 30px 60px;
+                            }
+                                .box3_1{
+                                    width: 240px;
+                                    height: 340px;
+                                    margin: 0 70px 0 0px;
+                                }
+                                .box3_2{
+                                    margin: 0 50px 0 0;
+                                }
+                                        .box3_21 h1{
+                                        font-family: 'NanumSquareExtraBold';
+                                        text-align: left;
+                                        font-size: 45px;
+                                        margin: 0 0 40px 0;
+                                        }
+                                    .box3_22{
+                                        font-family: 'NanumSquareBold';
+                                        text-align: left;
+                                        font-size: 25px;
+                                        line-height: 50px;
+                                        margin: 0;
+                                        }
+                                .box3_3 p{
+                                    width: 500px;
+                                    font-family: 'NanumSquareBold';
+                                    text-align: justify;
+                                    font-size: 17px;
+                                    letter-spacing: 3px;
+                                    margin: 105px 0 0 0 ;
+                                }
+
+                        .section4{
+                            background-color: rgba(255, 255, 255, 0.800);
+                            margin: 30px 0 30px;
+                            padding: 20px;
+                        }
+                            .box4{
+                                display: flex;
+                                margin: 30px 60px;
+                            }
+                                .box4_1{
+                                    width: 240px;
+                                    height: 340px;
+                                    margin: 0 70px 0 0px;
+                                }
+                                .box4_2{
+                                    margin: 0 50px 0 0;
+                                }
+                                        .box4_21 h1{
+                                        font-family: 'NanumSquareExtraBold';
+                                        text-align: left;
+                                        font-size: 45px;
+                                        margin: 0 0 40px 0;
+                                        }
+                                    .box4_22{
+                                        font-family: 'NanumSquareBold';
+                                        text-align: left;
+                                        font-size: 25px;
+                                        line-height: 50px;
+                                        margin: 0;
+                                        }
+                                .box4_3 p{
+                                    width: 500px;
+                                    font-family: 'NanumSquareBold';
+                                    text-align: justify;
+                                    font-size: 17px;
+                                    letter-spacing: 3px;
+                                    margin: 105px 0 0 0 ;
+                                }
+
+                        .section5{
+                            background-color: rgba(255, 255, 255, 0.800);
+                            margin: 30px 0 30px;
+                            padding: 20px;
+                        }
+                            .box5{
+                                display: flex;
+                                margin: 30px 60px;
+                            }
+                                .box5_1{
+                                    width: 240px;
+                                    height: 340px;
+                                    margin: 0 70px 0 0px;
+                                }
+                                .box5_2{
+                                    margin: 0 50px 0 0;
+                                }
+                                        .box5_21 h1{
+                                        font-family: 'NanumSquareExtraBold';
+                                        text-align: left;
+                                        font-size: 45px;
+                                        margin: 0 0 40px 0;
+                                        }
+                                    .box5_22{
+                                        font-family: 'NanumSquareBold';
+                                        text-align: left;
+                                        font-size: 25px;
+                                        line-height: 50px;
+                                        margin: 0;
+                                        }
+                                .box5_3 p{
+                                    width: 500px;
+                                    font-family: 'NanumSquareBold';
+                                    text-align: justify;
+                                    font-size: 17px;
+                                    letter-spacing: 3px;
+                                    margin: 105px 0 0 0 ;
+                                }
+
+                        .section6{
+                            background-color: rgba(255, 255, 255, 0.800);
+                            margin: 30px 0 30px;
+                            padding: 20px;
+                        }
+                            .box6{
+                                display: flex;
+                                margin: 30px 60px;
+                            }
+                                .box6_1{
+                                    width: 240px;
+                                    height: 340px;
+                                    margin: 0 70px 0 0px;
+                                }
+                                .box6_2{
+                                    margin: 0 50px 0 0;
+                                }
+                                        .box6_21 h1{
+                                        font-family: 'NanumSquareExtraBold';
+                                        text-align: left;
+                                        font-size: 45px;
+                                        margin: 0 0 40px 0;
+                                        }
+                                    .box6_22{
+                                        font-family: 'NanumSquareBold';
+                                        text-align: left;
+                                        font-size: 25px;
+                                        line-height: 50px;
+                                        margin: 0;
+                                        }
+                                .box6_3 p{
+                                    width: 500px;
+                                    font-family: 'NanumSquareBold';
+                                    text-align: justify;
+                                    font-size: 17px;
+                                    letter-spacing: 3px;
+                                    margin: 105px 0 0 0 ;
+                                }
+                 .footer {
+                    background-color: #78a65e;
+                    color: white;
+                    text-align: center;
+                    padding: 80px;
+                    letter-spacing: 5px;
+                     }
+                     .footer h1{
+                        font-size: 20px;
+                        font-weight: lighter;
+                        padding: 10px;
+                    }
+                    .footer h2{
+                        font-size: 15px;
+                        font-weight: lighter;
+                        padding: 10px;
+                    }
+                        .footer h3{
+                            font-size: 9px;
+                            font-weight: lighter;
+                        }
+                        .footer h4{
+                            font-size: 9px;
+                            font-weight: lighter;
+                        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="b_box">
+            <div class="box">
+                <div class="dot1"><a href="file:///Users/hongjihyun/Desktop/2%E1%84%92%E1%85%A1%E1%86%A8%E1%84%82%E1%85%A7%E1%86%AB%202%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%B5/4%20Wsb%20Design/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6/%E1%84%8B%E1%85%B0%E1%86%B8%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB_2%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5.html">지브리 스튜디오</a></div>
+                <div class="dot2"><a href="file:///Users/hongjihyun/Desktop/2%E1%84%92%E1%85%A1%E1%86%A8%E1%84%82%E1%85%A7%E1%86%AB%202%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%B5/4%20Wsb%20Design/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6/%E1%84%8B%E1%85%B0%E1%86%B8%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB_2%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5.html"><img src="image/home.png"></a></div>
+            </div>
+            </div>
+    </div>
+    <div class="wrapper">
+        <div class="header">
+            <ul class="nav">
+                <li><a href="file:///Users/hongjihyun/Desktop/2%E1%84%92%E1%85%A1%E1%86%A8%E1%84%82%E1%85%A7%E1%86%AB%202%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%B5/4%20Wsb%20Design/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6/%E1%84%8B%E1%85%B0%E1%86%B8%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB_3%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5.html">1 '지브리 스튜디오'</a></li>
+                <li><a href="file:///Users/hongjihyun/Desktop/2%E1%84%92%E1%85%A1%E1%86%A8%E1%84%82%E1%85%A7%E1%86%AB%202%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%B5/4%20Wsb%20Design/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6/%E1%84%8B%E1%85%B0%E1%86%B8%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB_4%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5.html">2 지브리 대표 영화</a></li>
+                <li><a href="file:///Users/hongjihyun/Desktop/2%E1%84%92%E1%85%A1%E1%86%A8%E1%84%82%E1%85%A7%E1%86%AB%202%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%B5/4%20Wsb%20Design/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1/10%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%20%E1%84%80%E1%85%AA%E1%84%8C%E1%85%A6/%E1%84%8B%E1%85%B0%E1%86%B8%E1%84%83%E1%85%B5%E1%84%8C%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AB_5%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5.html">3 지브리 정보</a></li>
+            </ul>
+        </div>
+        <div class="contents">
+            <div class="section1">
+                <div class="box1">
+                    <h2>너무 겉모습에만 신경 쓰지 마<br>중요한 건 마음가짐이야.</h2>
+                    <h3>&lt;마녀 배달부 키키 1989&gt;</h3>
+                </div>
+            </div>
+
+            <div class="section2">
+                <div class="box2">
+                    <div class="box2_1">
+                        <a href="https://www.ghibli.jp/works/totoro/#frame" target="blank"><img src="image/totoro_1.png"></a>
+                    </div>
+                    <div class="box2_2">
+                        <div class="box2_21">
+                            <h1>이웃집 토토로&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                        </div>
+                        <div class="box2_22">
+                            <ul class="nav2">
+                                <li>감독 : 미야자키 하야오</li>
+                                <li>음악 : 히사이시 조</li>
+                                <li>상영시간 :86분</li>
+                                <li>개봉일 : 1988.04.16</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box2_3">
+                        <p>숲속에 살고 있는 특별한 친구를 만났다!<br><br>
+                            도시를 떠나 시골로 이사 온 ‘사츠키’와 ‘메이’는 우연히 숲속에 살고 있는 신비로운 생명체 ‘토토로’를 만나 신비한 모험을 함께 한다.
+                            그러던 어느 날, 어머니의 병원에서 위태로운 소식이 도착하고 언니 ‘사츠키’가 정신없이 아빠에게 연락을 취하는 와중에 ‘메이’가 행방불명 되는데…</p>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="section3">
+                <div class="box3">
+                    <div class="box3_1">
+                        <a href="https://www.ghibli.jp/works/majo/#frame" target="blank"><img src="image/majo.png"></a>
+                    </div>
+                    <div class="box3_2">
+                        <div class="box3_21">
+                            <h1>마녀 배달부 키키&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                        </div>
+                        <div class="box3_22">
+                            <ul class="nav2">
+                                <li>감독 : 미야자키 하야오</li>
+                                <li>음악 : 히사이시 조</li>
+                                <li>상영시간 :102분</li>
+                                <li>개봉일 : 1989.07.29</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box3_3">
+                        <p>13세가 된 견습 마녀는 어엿한 마녀가 되기 위해서 다른 마을에 가서 1년 동안 부모를 떠나 자립해서 수행해야 하는데, 마침 키키가 13세가 되자 마을을 찾아 여행을 떠나고, 커다란 마을에 도착한다. 마을을 헤매다 마음씨 좋은 빵집 주인 오소노를 만나고 그 곳에서 살면서 마녀의 빗자루 타는 능력을 활용해 택배 사업을 시작한다.<br><br>
+                        한편, 하늘을 나는 것에 관심이 많은 소년 톰보와 자상한 성격의 할머니, 자유분방한 소녀화가 우르술라등을 만나면서 키키는 점점 성장해 나가는데…</p>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="section4">
+                <div class="box4">
+                    <div class="box4_1">
+                        <a href="https://www.ghibli.jp/works/chihiro/#frame" target="blank"><img src="image/chihiro.png"></a>
+                    </div>
+                    <div class="box4_2">
+                        <div class="box4_21">
+                            <h1>센과 치히로의 행방불명</h1>
+                        </div>
+                        <div class="box4_22">
+                            <ul class="nav2">
+                                <li>감독 : 미야자키 하야오</li>
+                                <li>음악 : 히사이시 조</li>
+                                <li>상영시간 :125분</li>
+                                <li>개봉일 : 2001.07.20</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box4_3">
+                        <p>금지된 세계의 문이 열렸다!<br><br>
+                            이사 가던 날, 수상한 터널을 지나자 인간에게는 금지된 신들의 세계로 오게 된 치히로.. 신들의 음식을 먹은 치히로의 부모님은 돼지로 변해버린다. “걱정마, 내가 꼭 구해줄게…” 겁에 질린 치히로에게 다가온 정체불명의 소년 하쿠. 그의 따뜻한 말에 힘을 얻은 치히로는 인간 세계로 돌아가기 위해 사상 초유의 미션을 시작하는데…</p>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="section5">
+                <div class="box5">
+                    <div class="box5_1">
+                        <a href="https://www.ghibli.jp/works/howl/#frame" target="blank"><img src="image/howl.png"></a>
+                    </div>
+                    <div class="box5_2">
+                        <div class="box5_21">
+                            <h1>하울의 움직이는 성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                        </div>
+                        <div class="box5_22">
+                            <ul class="nav2">
+                                <li>감독 : 미야자키 하야오</li>
+                                <li>음악 : 히사이시 조</li>
+                                <li>상영시간 :119분</li>
+                                <li>개봉일 : 2004.11.20</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box5_3">
+                        <p>마법이 존재하고 기계가 발달한 세상. 모자가게에서 일하는 18살 소녀 소피는 어느날 골목길에서 마주친 짓궂은 군인들에 의해 곤란한 상황에 처하게 되는데 웬 잘생긴 남자 하울이 나타나서 그녀를 구해준다. 하울과 헤어진 후에 느닷없이 황야의 마녀가 그녀를 찾아오고, 황야의 마녀는 하울에 대해서 묻더니 돌연 소피를 90세 먹은 노파로 만들어버린다.<br><br>
+                        노파가 된 소피는 사람들의 눈을 피해 아무도 없는 황무지로 향하는데... </p>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="section6">
+                <div class="box6">
+                    <div class="box6_1">
+                        <a href="https://www.ghibli.jp/works/ponyo/#frame" target="blank"><img src="image/ponyo.png"></a>
+                    </div>
+                    <div class="box6_2">
+                        <div class="box6_21">
+                            <h1>벼랑 위에 포뇨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                        </div>
+                        <div class="box6_22">
+                            <ul class="nav2">
+                                <li>감독 : 미야자키 하야오</li>
+                                <li>음악 : 히사이시 조</li>
+                                <li>상영시간 :101분</li>
+                                <li>개봉일 : 2008.07.19</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box6_3">
+                        <p>호기심 많은 물고기 소녀 ‘포뇨’는 따분한 바다 생활에 싫증을 느끼고, 아빠 몰래 늘 동경하던 육지로 가출을 감행한다. 육지로 올라온 ‘포뇨’는 유리병 속에 갇히는 위기에 처하게 되고 때마침 해변가에 놀러 나온 소년 ‘소스케’의 도움으로 구출된다.<br>
+                         즐거운 육지 생활도 잠시, 아빠 ‘후지모토’에 의해 결국 ‘포뇨’는 바다로 다시 돌아간다. 하지만 여동생들의 도움으로 탈출에 성공한 ‘포뇨’는 소녀의 모습으로 변해 거대한 파도와 함께 ‘소스케’에게로 향하는데, 과연 포뇨는 어려움을 뚫고 소스케를 다시 만날 수 있을 것인가?</p>  
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <h1>지브리 스튜디오 홈페이지</h1>
+        <h2>menu : 1 ‘지브리스튜디오’ / 2 지브리 대표 영화 / 지브리 정보</h2>
+        <h3>made homepage : HONG JIHYUN / 2021.11.09</h3>
+        <h4>*공식 지브리 스튜디오 홈페이지가 아닙니다. 개인제작 홈페이지 입니다.</h4>
+    </div>
+</body>
+</html>
